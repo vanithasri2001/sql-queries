@@ -1,0 +1,69 @@
+Select Firstname , last name 1
+ from person.person
+where Firstname ='Mark'
+
+select top 100 1
+from production.product
+where  list price <>'0.00'
+
+select *
+from HumanResources.vEmployee
+where employee Lastname LIKE '[a-c]%' or where LAstNmae <'D'
+
+select *
+from person.stateprovince
+where CountryRegionCode ='CA'
+
+Select Firstname AS "Customer FirstNmae"and   LastName AS "customer lastname"
+from sales.individual
+where Lastname='Smith' 
+
+Select *
+from Sales.vIndividualCustomer
+where Countryregionname='Australia' or[ Phone numbertype='Cell' AND emailproductionvalue= 0]
+
+Select *
+from Human resources.Vemployee
+where Department IN('Executive','tooldesign','Engineering')
+Where Department ='Executive' or 'tooldesign' or 'Engineering'
+
+Select * employee
+from HumanResources.Vemployee
+where employee startdate between 7/1/2000 and 6/30/2002
+where employee startdate <=july/30/2000
+where employee startdate >=june/30/2002
+
+Select * 
+from sales.vindividualcustomer
+where  Lastname LIKE 'R%'
+
+Select * 
+from sales.vindividualcustomer
+where  Lastname LIKE '%r'
+
+Select*
+from viewsales.individual
+where Lastname IN ('Lopez','Martin','wood') AND
+where FirstName LIKE '[C-L]%'
+
+SELECT
+*
+FROM
+Sales.SalesOrderHeader
+WHERE
+SalesPersonID
+IS
+NOT
+NULL
+
+SELECT SalesPersonID,TotalDue
+FROM Sales.SalesOrderHeader
+WHERE SalesPersonID IS NOT NULL AND TotalDue > 70000
+
+
+
+
+
+ 
+
+
